@@ -23,7 +23,7 @@ def Caesar_Cipher_Encrypition(Text, shifts):
             Data += Encription[i]
     return Data
 
-def Caesar_Cipher_Dencrypition(Text, shifts):
+def function(Text, shifts):
     Data = Text
     for i in range(shifts):
         Dencription = []
@@ -48,5 +48,5 @@ def Caesar_Cipher_Dencrypition(Text, shifts):
 Plain_Text = "Hassan and Umer are the Best"
 En_Data = Caesar_Cipher_Encrypition(Plain_Text, 0)
 print("Encripition: ", En_Data)
-Data = Caesar_Cipher_Dencrypition(En_Data, 0)
+Data = function(En_Data, 0)
 print("Decripition: ", Data)
