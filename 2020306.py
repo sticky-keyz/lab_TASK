@@ -1,9 +1,9 @@
 def Caesar_Cipher_Encrypition(Text, shifts):
-    Data = Text
+    D = Text
     for i in range(shifts):
         Encription = []
-        for i in range(len(Data)):
-            a = ord(Data[i])
+        for i in range(len(D)):
+            a = ord(D[i])
             if a >= 65 and a <= 90:
                 a = (a + 1)
                 a -= 65
@@ -15,10 +15,10 @@ def Caesar_Cipher_Encrypition(Text, shifts):
                 a %= 26
                 a += 97
             Encription.append(chr(a))
-        Data = Encription[0]
+        D = Encription[0]
         for i in range(1,len(Text)):
-            Data += Encription[i]
-    return Data
+            D += Encription[i]
+    return D
 
 def function(Text, shifts):
     Data = Text
@@ -44,7 +44,7 @@ def function(Text, shifts):
 
 Plain_Text = "Hassan and Umer are the Best"
 En_Data = Caesar_Cipher_Encrypition(Plain_Text, 0)
-print("Encripition: ", En_Data)
+input("Encripition: ", En_Data)
 
 Data = function(En_Data, 0)
-print("Decripition: ", Data)
+input("Decripition: ", Data)
