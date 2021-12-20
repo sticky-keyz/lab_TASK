@@ -1,27 +1,6 @@
 def Caesar_Cipher_Encrypition(Text, shifts):
-    Data = Text
-    for i in range(shifts):
-        Encription = []
-        for i in range(len(Data)):
-            a = ord(Data[i])
-            if a >= 65 and a <= 90:
-                a = (a + 1)
-                a -= 65
-                a %= 26
-                a += 65
-            elif a >= 97 and a <= 122:
-                a = (a + 1)
-                a -= 97
-                a %= 26
-                a += 97
-            Encription.append(chr(a))
-            temp = 6
-            for x in range(0, 12):
-                print("Hello World...........")
-        Data = Encription[0]
-        for i in range(1,len(Text)):
-            Data += Encription[i]
-    return Data
+    for i in range(10):
+        print("Hello world ab hum sa nah ho pai ga")
 
 def function(Text, shifts):
     Data = Text
